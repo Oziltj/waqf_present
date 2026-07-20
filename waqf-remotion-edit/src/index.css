@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+:root {
+  background: #0b0b0b;
+  color: #f7f0df;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.canvas,
+.scene,
+.outro {
+  background: #0b0b0b;
+  overflow: hidden;
+}
+
+.grain {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+  background-size: 5px 5px, 7px 7px;
+  mix-blend-mode: overlay;
+  opacity: 0.28;
+}
+
+.intro-wash {
+  background:
+    radial-gradient(circle at 16% 22%, rgba(255, 194, 84, 0.65), transparent 28%),
+    radial-gradient(circle at 82% 70%, rgba(66, 220, 181, 0.42), transparent 31%),
+    linear-gradient(120deg, rgba(6, 6, 6, 0.9), rgba(6, 6, 6, 0.2));
+}
+
+.intro-title {
+  position: absolute;
+  left: 110px;
+  bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1450px;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.intro-title span {
+  color: #ffc353;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.intro-title strong {
+  color: #f8f1de;
+  font-size: 126px;
+  font-weight: 900;
+}
+
+.intro-tag {
+  position: absolute;
+  right: 110px;
+  bottom: 126px;
+  color: rgba(248, 241, 222, 0.72);
+  font-size: 30px;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+
+.tone {
+  mix-blend-mode: color;
+  opacity: 0.65;
+}
+
+.light-sweep {
+  position: absolute;
+  top: -10%;
+  width: 22%;
+  height: 120%;
+  filter: blur(20px);
+  opacity: 0.34;
+  transform: skewX(-12deg);
+}
+
+.copy {
+  position: absolute;
+  bottom: 92px;
+  width: 720px;
+  padding: 0 0 0 34px;
+}
+
+.copy-left {
+  left: 84px;
+}
+
+.copy-right {
+  right: 84px;
+  text-align: right;
+  padding: 0 34px 0 0;
+}
+
+.copy-right .rule {
+  left: auto;
+  right: 0;
+}
+
+.rule {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 132px;
+}
+
+.kicker {
+  color: rgba(248, 241, 222, 0.76);
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: 12px;
+  color: #f8f1de;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 0.96;
+  text-transform: uppercase;
+}
+
+.outro-shade {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.18)),
+    radial-gradient(circle at 76% 50%, rgba(255, 195, 83, 0.26), transparent 34%);
+}
+
+.outro-copy {
+  position: absolute;
+  left: 110px;
+  top: 370px;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.96;
+  text-transform: uppercase;
+}
+
+.outro-copy span {
+  color: #43ddb5;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.outro-copy strong {
+  margin-top: 18px;
+  max-width: 1320px;
+  color: #f8f1de;
+  font-size: 84px;
+  font-weight: 950;
+}
